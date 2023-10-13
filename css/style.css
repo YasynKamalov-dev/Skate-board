@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #1F1D2B;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1240px;
+    margin: 0 auto;
+}
+
+
+
+/* HEADER ============================ */
+#header{
+    margin: 20px 0px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header h1{
+    color: #FFF;
+font-size: 20px;
+font-weight: 600;
+}
+.input-div input{
+    width: 625px;
+height: 40px;
+border-radius: 10px;
+background: #ffffff2b;
+border: none;
+outline: none;
+padding: 0px 0px 0px 20px;
+color: white;
+font-size: 15px;
+}
+.input-div input::placeholder{
+    color: #9a9999;
+font-size: 13px;
+font-weight: 400;
+}
+.input-div{
+    position: relative;
+}
+.input-div ion-icon{
+    position: absolute;
+    left: 590px;
+    top: 8px;
+    color: gray;
+    font-size: 21px;
+    cursor: pointer;
+}
+.header-end{
+    display: flex;
+    align-items: center;
+}
+.header-end select{
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    width: 80px;
+    display: flex;
+    align-items: center;
+}
+.header-end ion-icon{
+    background: none;
+    color: gray;
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+/* MAIN MAIN MAIN ================= */
+.main-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.main-menu hr{
+    width: 135px;
+height: 1px;
+background: #43464a;
+border: none;
+border-radius: 10px;
+margin: 40px 0px;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+.itself-icon-main{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+}
+.itself-icon-main h3{
+    color: #FFF;
+font-size: 14px;
+font-weight: 600;
+}
+.itself-icons{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: .3s;
+}
+.itself-icons:hover{
+    transform: scale(1.1);
+    color: white;
+    margin-left: 15px;
+    
+}
+.main-menu h5{
+    color: #5b5b68;
+font-size: 12px;
+font-weight: 500;
+margin-bottom: 24px;
+}
+.itself-icon-main ion-icon{
+border-radius: 12px;
+background: #FF7551;
+color: white;
+font-size: 18px;
+padding: 8px 8px;
+}
+.itself-icons ion-icon{
+    border-radius: 12px;
+background: #9c9a9a26;
+color: rgba(255, 255, 255, 0.499);
+font-size: 18px;
+padding: 8px 8px;
+}
+.itself-icons h3{
+    color: #808191;
+font-size: 14px;
+font-weight: 400;
+}
+
+/* CHECKBOX CHECKBOX ===================== */
+.light{
+    margin: 20px 0px 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+.light h3{
+    color: #808191;
+font-size: 14px;
+font-weight: 400;
+}
+.light input{
+    display: none;
+    visibility: hidden;
+    display: none;
+}
+.check{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 30px;
+    background: rgb(145, 131, 255);
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in .5s;
+
+}
+input:checked ~ .check{
+    background: #0091ff;
+    box-shadow: 0 0 50px 3px rgb(255, 255, 255);
+}
+.check::before{
+    content: '';
+    position: absolute;
+    top: 2.5px;
+    left: 23px;
+    background: #ffffff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transition: .5s;
+}
+input:checked ~ .check::before{
+    transform: translateX(-20px);
+    background: rgb(255, 255, 255);
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+
+/* CONTENT CONTENT ============== */
+
+.up-content h1{
+    color: #FFF;
+font-size: 40px;
+font-weight: 600;
+margin-bottom: 20px;
+}
+.left-info h1{
+    color: #FFF;
+font-size: 28px;
+font-weight: 600;
+margin-bottom: 39px;
+}
+.main-txt h2{
+    color: #FFF;
+font-size: 14px;
+font-weight: 500;
+}
+.main-txt p{
+    color: #ffffffa5;
+font-size: 12px;
+font-weight: 400;
+letter-spacing: 2px;
+}
+.left{
+    position: relative;
+    background: url('../img/left.svg') no-repeat center/cover;
+    width: 725px;
+height: 366px;
+cursor: pointer;
+transition: .4s;
+}
+.left:hover{
+    background: url('../img/рщмук1.jpg') no-repeat center/cover;
+    width: 725px;
+height: 366px;
+border-radius: 17px;
+transition: 0.4s;
+}
+.left-info{
+    position: absolute;
+    left: 30px;
+    top: 60px;
+
+}
+.main-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.main-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.thomas{
+    position: relative;
+}
+.thomas ion-icon{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    color: #0696a6;
+    font-size: 10px;
+
+    background: white;
+    border-radius: 50%;
+    border: 2px solid #0DAABC ;
+    padding: 4px;
+}
+.thomas img{
+  padding: 4px;
+    border-radius: 50%;
+    border: 1.5px solid rgb(255, 255, 255);
+}
+.left-info h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    color: #FFF;
+font-size: 10px;
+font-weight: 500;
+letter-spacing: 1px;
+width: 46px;
+height: 20px;
+background: #242730;
+opacity: 0.7;
+position: absolute;
+left: 630px;
+top: 270px;
+}
+
+
+
+
+
+/* LEFT =============== */
+.right{
+    position: relative;
+    background: url('../img/right.svg') no-repeat center/cover;
+    width: 352px;
+height: 366px;
+cursor: pointer;
+transition: .4s;
+}
+.right:hover{
+    background: url('../img/hover4.jpg') no-repeat center/cover;
+    width: 352px;
+height: 366px;
+border-radius: 17px;
+transition: .4s;
+}
+.right-txt{
+    position: absolute;
+    left: 30px;
+    top: 45px;
+}
+.right-txt h1{
+    color: #FFF;
+font-size: 30px;
+font-weight: 600;
+margin-bottom: 20px;
+}
+.tony h3{
+    color: #FFF;
+font-size: 15px;
+font-weight: 500;
+margin-bottom: 8px;
+}
+.tony p{
+    color: #ffffff9d;
+font-size: 12px;
+font-weight: 400;
+letter-spacing: 2px;
+}
+.tony-img{
+    position: relative;
+    margin-top: 20px;
+}
+.tony-img ion-icon{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    color: #0696a6;
+    font-size: 10px;
+
+    background: white;
+    border-radius: 50%;
+    border: 2px solid rgb(212, 172, 103);
+    padding: 4px;
+}
+.tony-img img{
+    padding: 4px;
+    border-radius: 50%;
+    border: 1.5px solid rgb(255, 255, 255);
+}
+.right h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    color: #FFF;
+font-size: 10px;
+font-weight: 500;
+letter-spacing: 1px;
+width: 46px;
+height: 20px;
+background: #242730;
+opacity: 0.7;
+position: absolute;
+left: 290px;
+top: 336px;
+}
+.itself-up{
+    display: flex;
+    gap: 10px;
+}
+#main{
+    margin-top: 30px;
+}
+
+
+
+
+/* DOWN DOWN ============= */
+.main-img{
+    position: relative;
+}
+.main-img .with-back{
+    padding: 0px 0px 150px 0px;
+    background: #242730;
+    border-radius: 20px;
+
+}
+.card{
+    cursor: pointer;
+    transition: .4s;
+}
+.card:hover{
+transform: scale(1.1);
+margin: 0px 20px 0px 20px;
+transition: .4s;
+
+}
+
+.circle{
+    position: absolute;
+    left: 180px;
+    top: 130px;
+}
+.circle img{
+    padding: 4px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(255, 255, 255, 0.423);
+}
+.circle ion-icon{
+    padding: 1px;
+    color: white;
+    background: #08A0F7;
+    border-radius: 50%;
+    border: 3px solid #242730;
+    position: absolute;
+    left: 40px;
+    top: 37px;
+}
+.main-img h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    color: #FFF;
+font-size: 10px;
+font-weight: 500;
+letter-spacing: 1px;
+width: 46px;
+height: 20px;
+background: #24273090;
+position: absolute;
+top: 7px;
+left: 200px;
+}
+
+.down-info{
+    position: absolute;
+    left: 20px;
+    top: 180px;
+}
+.andy h6{
+    color: #d3d3d6e3;
+font-size: 13px;
+font-weight: 400;
+letter-spacing: 0.5px;
+}
+.green{
+    width: 9px;
+height: 9px;
+border-radius: 50%;
+background: #22B07D;
+}
+.andy{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.down-info h2{
+    color: #FFF;
+font-size: 16px;
+font-weight: 500;
+letter-spacing: 0.9px;
+line-height: 20px;
+margin: 14px 0px;
+}
+.down-info p{
+    color: #64656f;
+font-size: 14px;
+font-weight: 400;
+line-height: 12px; /* 100% */
+letter-spacing: 0.5px;
+}
+.down-content h1{
+    margin: 45px 0px 30px 0px;
+    color: #FFF;
+font-size: 28px;
+font-weight: 500;
+line-height: 28px; /* 100% */
+}
+.itself-down{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* ANIMATION ============== */
+
+
